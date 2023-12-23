@@ -34,9 +34,10 @@ Although MLE may appear to be optimal in many cases, it may be too crude, wherea
 
 ![image](https://github.com/paulohloblin/bayesian-net-credit-risk/assets/54881219/0cd08169-c7ad-4812-9631-c8c94454bc99)
 _CPT for the `person_emp_length` variable_
-![image](https://github.com/paulohloblin/bayesian-net-credit-risk/assets/54881219/622fb327-066d-4377-9e76-e11513f32aed)
 
+![image](https://github.com/paulohloblin/bayesian-net-credit-risk/assets/54881219/622fb327-066d-4377-9e76-e11513f32aed)
 _CPT for the `person_age` variable_
+
 ### Results and inference
 After learning the structure and parameters, the Bayesian network can be applied for statistical inference. In Bayesian networks, in order to learn the posterior distribution of a certain variable, not all the vertices of the network graph are needed, but only the parent, child vertices, and the parent vertices of the child vertices. This set is called a Markov blanket, and pgmpy allows you to obtain a Markov blanket for any node. For example, for the `loan_status` node (marked as green), the Markov blanket nodes (marked as blue) look like this
 
