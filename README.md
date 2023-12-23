@@ -28,9 +28,7 @@ For the MLE method, the phenomenon of overtraining may occur for small data sets
 Although MLE may appear to be optimal in many cases, it may be too crude, whereas the Bayesian approach is inherently more robust and reliable. Therefore, Bayesian estimation was chosen for parameter training.
 
 ![image](https://github.com/paulohloblin/bayesian-net-credit-risk/assets/54881219/0cd08169-c7ad-4812-9631-c8c94454bc99)
-
 _CPT for the `person_emp_length` variable_
-
 ![image](https://github.com/paulohloblin/bayesian-net-credit-risk/assets/54881219/622fb327-066d-4377-9e76-e11513f32aed)
 
 _CPT for the `person_age` variable_
