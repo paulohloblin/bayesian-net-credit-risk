@@ -4,6 +4,11 @@ This is an overview of the master thesis about building a probabilistic graph mo
 ### Introduction
 Credit risk assessment consists in calculating the probability that the borrower will not fulfill his financial obligations, such as, for example, repayment of the loan. For financial institutions, this is a key process, as it serves as the basis for making informed decisions. By conducting a comprehensive assessment of credit risk, these institutions have the opportunity to make informed choices about granting credit, setting interest rates, etc.
 Credit risk assessment is inherently a complex task. This requires the synthesis of a large amount of diverse information, for example, financial, economic indicators and quality factors, into a coherent structure. To solve such a task, Bayesian networks appear as a powerful analytical tool that offers a modern and reliable approach to credit risk assessment. A Bayesian network is a probabilistic graphical model that provides a formal, holistic representation of knowledge and information that contains uncertainty. This mathematical model is able to reflect the interdependencies and conditional probabilities that underlie credit risk. Using a Bayesian network, it is possible to model the relationships between various factors affecting credit risk, such as income level, employment, credit history, etc. The graphical representation of Bayesian networks allows transparent visualization of these complex relationships, aiding in decision-making and risk management.
+### Tools
+- Python programming language was chosen for the development and training of the Bayesian network. 
+- JupyterLab was used as an IDE for building a model. 
+- The Angular frontend framework and the Flask backend microframework were chosen to develop the app for Bayesian network visualization.
+- Visual Studio Code code editor was used to develop a web app.
 ### Bayesian network
 A Bayesian network (BN) is a probabilistic graphical model for representing knowledge about an uncertain domain where each node corresponds to a random variable and each edge represents the conditional probability for the corresponding random variables. It is represented in form of Directed Acyclic Graph (DAG) and looks like this:
 
