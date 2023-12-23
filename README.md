@@ -26,9 +26,13 @@ In order to reduce the graph search space, constraints were set at the input of 
 In the `Pgmpy` library, it is possible to study the parameters, that is, to calculate the values of all conditional probabilities of a given Bayesian network, using Bayesian estimation or using maximum likelihood estimation (MLE). The first method uses an a priori distribution from the data set, the second makes no initial assumptions.
 For the MLE method, the phenomenon of overtraining may occur for small data sets, since they may not have enough observations, and therefore the observed frequencies may not be representative. Bayesian estimation, on the other hand, relies not only on the data set to train the network parameters, but also uses prior knowledge expressed in terms of the prior distribution. Thus, this estimate makes some initial assumptions that compensate for missing data.
 Although MLE may appear to be optimal in many cases, it may be too crude, whereas the Bayesian approach is inherently more robust and reliable. Therefore, Bayesian estimation was chosen for parameter training.
+
 ![image](https://github.com/paulohloblin/bayesian-net-credit-risk/assets/54881219/0cd08169-c7ad-4812-9631-c8c94454bc99)
+
 _CPT for the `person_emp_length` variable_
+
 ![image](https://github.com/paulohloblin/bayesian-net-credit-risk/assets/54881219/622fb327-066d-4377-9e76-e11513f32aed)
+
 _CPT for the `person_age` variable_
 ### Results and inference
 After learning the structure and parameters, the Bayesian network can be applied for statistical inference. In Bayesian networks, in order to learn the posterior distribution of a certain variable, not all the vertices of the network graph are needed, but only the parent, child vertices, and the parent vertices of the child vertices. This set is called a Markov blanket, and pgmpy allows you to obtain a Markov blanket for any node. For example, for the `loan_status` node (marked as green), the Markov blanket nodes (marked as blue) look like this
