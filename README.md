@@ -48,6 +48,7 @@ Some examples of such queries and the results of these queries:
 
 ### A web application based on the Bayesian network
 A web application was created that visualizes a Bayesian network (BN) and allows interactive interaction with it, making inferences. The application is built on the basis of the Angular and Flask frameworks and allows you to visualize the inference of the Bayesian network and, accordingly, credit risks.
+- the app is available by this url: https://paulohloblin.github.io/bayes-credit/
 - the source code of the front-end part: https://github.com/paulohloblin/bayes-credit
 - the source code of the back-end part: https://github.com/paulohloblin/bayes-credit-backend
 
