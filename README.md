@@ -34,7 +34,9 @@ _CPT for the `person_emp_length` variable_
 _CPT for the `person_age` variable_
 ### Results and inference
 After learning the structure and parameters, the Bayesian network can be applied for statistical inference. In Bayesian networks, in order to learn the posterior distribution of a certain variable, not all the vertices of the network graph are needed, but only the parent, child vertices, and the parent vertices of the child vertices. This set is called a Markov blanket, and pgmpy allows you to obtain a Markov blanket for any node. For example, for the `loan_status` node (marked as green), the Markov blanket nodes (marked as blue) look like this
+
 ![image](https://github.com/paulohloblin/bayesian-net-credit-risk/assets/54881219/5420a903-e2c7-4b38-ba96-6b4b2aa8efb3)
+
 Thus, in order to assess credit risks, that is, to calculate the probability that the client will not repay the loan, it is enough to know only 4 variables out of 11, namely: the intention of the loan, the ratio of the size of the loan to the client's income, the client's rating and the type of housing in which he lives client. Other variables will affect the posterior distribution only if at least one of the variables from the Markov coverage does not have a certificate.
 By default, the pgmpy library uses the variable elimination algorithm for inference.
 Some examples of such queries and the results of these queries:
