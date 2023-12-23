@@ -1,4 +1,4 @@
-# Learning a Bayesian Network for Credit Risk Assessment
+# Building a Bayesian Network for Credit Risk Assessment
 Case study dedicated to the application of Bayesian Network model for credit risk assessment.
 This is an overview of the master thesis about building a probabilistic graph model and its application in riskology. 
 ### Introduction
